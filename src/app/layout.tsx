@@ -1,8 +1,5 @@
-import SupabaseProvider from "@/app/supabase-provider2";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import MantineProvider from "@/app/MantineProvider";
+import SupabaseProvider from "@/app/SupabaseProvider";
 
 export const metadata = {
   title: "Create Next App",
@@ -16,8 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <SupabaseProvider>{children}</SupabaseProvider>
+      <body>
+        <MantineProvider>
+          <SupabaseProvider>{children}</SupabaseProvider>
+        </MantineProvider>
       </body>
     </html>
   );
