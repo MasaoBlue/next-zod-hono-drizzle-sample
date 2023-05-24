@@ -1,0 +1,22 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.addMissingImports",
+    "source.organizeImports",
+    "source.fixAll.eslint"
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "Prettier-SQL.expressionWidth": 120,
+  "Prettier-SQL.keywordCase": "upper",
+  "Prettier-SQL.SQLFlavourOverride": "postgresql"
+}

@@ -16,3 +16,10 @@ pnpm init
 pnpm run supabase init
 ```
 
+## create migration
+
+```sh
+pnpm supabase migration new create_todo
+# generated ./supabase/migrations/YYYYMMDDhhmmss_create_todo.sql
+```
+
