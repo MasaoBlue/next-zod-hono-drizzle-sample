@@ -1,0 +1,16 @@
+{
+  "name": "next-zod-hono-drizzle-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "supabase": "supabase"
+  },
+  "keywords": [],
+  "author": "masaoblue",
+  "license": "ISC",
+  "devDependencies": {
+    "supabase": "^1.63.0"
+  }
+}
