@@ -9,12 +9,17 @@
     "start": "next start",
     "lint": "next lint",
     "preinstall": "npx only-allow pnpm",
-    "supabase": "supabase"
+    "supabase": "supabase",
+    "supabase:generate": "pnpx supabase gen types typescript --local > src/lib/database.types.ts"
   },
   "keywords": [],
   "author": "masaoblue",
   "license": "ISC",
   "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.6.1",
+    "@supabase/auth-helpers-react": "^0.3.1",
+    "@supabase/auth-ui-react": "^0.4.2",
+    "@supabase/auth-ui-shared": "^0.1.6",
     "@types/node": "20.2.3",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -26,6 +31,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "encoding": "^0.1.13",
     "supabase": "^1.63.0"
   }
 }
