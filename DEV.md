@@ -3,10 +3,8 @@
 ## init project
 
 ```sh
-pnpm init
+pnpm dlx create-next-app
 ```
-
-[pnpmだけを使うようにする | pnpm](https://pnpm.io/ja/only-allow-pnpm)
 
 ## init supabase
 
@@ -22,4 +20,3 @@ pnpm run supabase init
 pnpm supabase migration new create_todo
 # generated ./supabase/migrations/YYYYMMDDhhmmss_create_todo.sql
 ```
-
