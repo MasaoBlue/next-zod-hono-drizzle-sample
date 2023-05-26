@@ -15,7 +15,7 @@ export default function MainHeader() {
   return (
     <Header height={60} p="xs">
       <Flex justify="space-between">
-        <Title order={3}>Sample TODO Apllication</Title>
+        <Title order={3}>Sample ToDo Apllication</Title>
         <Menu
           trigger="hover"
           transitionProps={{ exitDuration: 0 }}

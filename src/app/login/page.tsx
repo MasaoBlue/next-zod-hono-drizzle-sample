@@ -3,6 +3,7 @@
 import { Group } from "@mantine/core";
 import { useSupabaseClient, useUser } from "@supabase/auth-helpers-react";
 import { Auth } from "@supabase/auth-ui-react";
+import { ThemeSupa } from "@supabase/auth-ui-shared";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -31,6 +32,9 @@ export default function Home() {
       ) : (
         <Auth
           redirectTo={redirectTo}
+          appearance={{
+            theme: ThemeSupa,
+          }}
           supabaseClient={supabaseClient}
           providers={[]}
         />

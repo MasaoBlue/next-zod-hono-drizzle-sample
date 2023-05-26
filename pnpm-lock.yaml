@@ -4,6 +4,9 @@ dependencies:
   '@emotion/react':
     specifier: ^11.11.0
     version: 11.11.0(@types/react@18.2.7)(react@18.2.0)
+  '@hono/zod-validator':
+    specifier: ^0.1.2
+    version: 0.1.2(hono@3.2.2)(zod@3.21.4)
   '@mantine/core':
     specifier: ^6.0.11
     version: 6.0.11(@emotion/react@11.11.0)(@mantine/hooks@6.0.11)(@types/react@18.2.7)(react-dom@18.2.0)(react@18.2.0)
@@ -37,6 +40,9 @@ dependencies:
   eslint-config-next:
     specifier: 13.4.3
     version: 13.4.3(eslint@8.41.0)(typescript@5.0.4)
+  hono:
+    specifier: ^3.2.2
+    version: 3.2.2
   next:
     specifier: 13.4.3
     version: 13.4.3(react-dom@18.2.0)(react@18.2.0)
@@ -49,6 +55,9 @@ dependencies:
   typescript:
     specifier: 5.0.4
     version: 5.0.4
+  zod:
+    specifier: ^3.21.4
+    version: 3.21.4
 
 devDependencies:
   encoding:
@@ -267,6 +276,16 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tabbable: 6.1.2
+    dev: false
+
+  /@hono/zod-validator@0.1.2(hono@3.2.2)(zod@3.21.4):
+    resolution: {integrity: sha512-rsAH7TAbpgFfMFNAe8PsjZb3jiHn+fDJvEM7bju0c64MMMKsFOuuzGur/0wyvMOgHDqCx08gAo0GRpoohJXMtQ==}
+    peerDependencies:
+      hono: 3.*
+      zod: ^3.19.1
+    dependencies:
+      hono: 3.2.2
+      zod: 3.21.4
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
@@ -1995,6 +2014,11 @@ packages:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
       react-is: 16.13.1
+    dev: false
+
+  /hono@3.2.2:
+    resolution: {integrity: sha512-yVkYyefATYGz6j7iDcugtEvg4AgpccE1tDYnmvTmXDR4NQrUJ3/SdHU9V7UuWQjGtfrBujeBUAq70oc82ADsvA==}
+    engines: {node: '>=16.0.0'}
     dev: false
 
   /human-signals@2.1.0:
