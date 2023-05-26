@@ -7,18 +7,24 @@ import { useState } from "react";
 
 export default function ToDoAddForm() {
   const [value, setValue] = useState<string>("");
+  const [isProcessing, setIsProcessing] = useState<boolean>(false);
 
   const router = useRouter();
 
   const handleSubmit = async () => {
-    await apiClient.todo.$post({ json: { task: value } });
-    setValue("");
-    router.refresh();
+    setIsProcessing(true);
+    try {
+      await apiClient.todo.$post({ json: { task: value } });
+      setValue("");
+      router.refresh();
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   return (
     <TextInput
-      required
+      disabled={isProcessing}
       placeholder="Type ToDo title"
       value={value}
       onChange={(v) => setValue(v.target.value)}
