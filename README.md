@@ -26,6 +26,7 @@ pnpm dev
 ## Libraries
 
 - Application Framework: Next.js
+- UI: Mantine
 - Router: Hono
-- Validator: zod
-- ORM: drizzle
+- Validator: Zod
+- ORM: Drizzle ORM

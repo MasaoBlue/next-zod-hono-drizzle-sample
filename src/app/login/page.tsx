@@ -34,6 +34,11 @@ export default function Home() {
           redirectTo={redirectTo}
           appearance={{
             theme: ThemeSupa,
+            style: {
+              input: {
+                color: "white",
+              },
+            },
           }}
           supabaseClient={supabaseClient}
           providers={[]}
